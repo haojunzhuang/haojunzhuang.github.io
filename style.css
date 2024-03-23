@@ -45,11 +45,11 @@ footer {
 }
 
 #avatar {
-    width: 150px;  /* Adjust the width as needed */
-    height: 170px; /* Adjust the height as needed */
-    border-radius: 30px; /* Adjust for desired roundness of corners */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
-    border: 3px solid white; /* Optional: Adds a border around the image */
+    width: 300px;  
+    height: 300px; 
+    border-radius: 30px; 
+    object-fit: cover; 
+    border: 3px solid white;
 }
 
 .social-links {
@@ -58,15 +58,14 @@ footer {
 }
 
 .social-links a {
-    margin: 0 15px; /* Increased margin for more separation */
-    color: #333; /* Icon color */
-    font-size: 40px; /* Increased icon size */
+    margin: 0 15px;
+    color: #333; 
+    font-size: 40px; 
     text-decoration: none;
 }
 
 .social-links a:hover {
-    color: #0077b5; /* Change color on hover (example for LinkedIn blue) */
-    /* Add different hover colors for GitHub and Instagram if desired */
+    color: #0077b5; 
 }
 
 
