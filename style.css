@@ -82,3 +82,11 @@ footer {
 .social-links a:hover {
     color: #0077b5; 
 }
+
+hr.darkblue {
+    border: 0;
+    height: 2px; 
+    background-color: rgba(28, 28, 164, 0.751); 
+    width: 60%; 
+    align-self: stretch; 
+}
