@@ -90,3 +90,16 @@ hr.darkblue {
     width: 60%; 
     align-self: stretch; 
 }
+
+.custom-tooltip {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    pointer-events: none;
+    z-index: 1000;
+    white-space: nowrap;
+    display: none;
+}

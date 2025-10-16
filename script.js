@@ -9,16 +9,18 @@ function shuffleString(str) {
     return arr.join('');
 }
 
-function setShuffledEmails() {
+function setShuffledEmailWithPrompt() {
+    const emailElem = document.getElementById('email');
     const shuffled = shuffleString(correctEmail);
-    document.getElementById('email').textContent = shuffled;
+    emailElem.textContent = shuffled;
+    emailElem.title = "Click to reveal";
 }
 
-setShuffledEmails();
+setShuffledEmailWithPrompt();
 
 function revealEmailWithEffect(elem, email) {
     let revealLength = 0;
-    const revealDelay = 40; // ms per character
+    const revealDelay = 40;
     let intervalId;
 
     function tick() {
@@ -34,32 +36,53 @@ function revealEmailWithEffect(elem, email) {
         if (revealLength >= email.length) {
             clearInterval(intervalId);
             elem.textContent = email;
+            elem.title = "";
         }
     }
 
     intervalId = setInterval(tick, revealDelay);
 }
 
-function resetToShuffled(elem) {
+function resetToShuffledWithPrompt(elem) {
     const shuffled = shuffleString(correctEmail);
     elem.textContent = shuffled;
+    elem.title = "Click to reveal";
 }
 
-function addRevealHover(id) {
+function addRevealOnClick(id) {
     const elem = document.getElementById(id);
+    let revealed = false;
 
     elem.addEventListener('mouseenter', function() {
-        revealEmailWithEffect(elem, correctEmail);
+        if (!revealed) {
+            elem.title = "Click to reveal";
+        }
     });
 
     elem.addEventListener('mouseleave', function() {
-        resetToShuffled(elem);
+        if (!revealed) {
+            elem.title = "Click to reveal";
+        }
     });
+
+    elem.addEventListener('click', function() {
+        if (!revealed) {
+            revealed = true;
+            elem.title = "";
+            revealEmailWithEffect(elem, correctEmail);
+        }
+    });
+
+    // document.addEventListener('click', function(event) {
+    //     if (revealed && !elem.contains(event.target)) {
+    //         revealed = false;
+    //         resetToShuffledWithPrompt(elem);
+    //     }
+    // });
 }
 
-addRevealHover('email');
+addRevealOnClick('email');
 
-// List of xkcd comic info: [number, filename]
 const comics = [
     [167, 'nihilism.png'],
     [1666, 'brain_upload.png'],
