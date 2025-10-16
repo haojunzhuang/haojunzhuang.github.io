@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haojun</title>
+    <title>Haojun Zhuang</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <div class="left-panel">
-            <img src="avatar3.jpeg" alt="" class="profile-photo">
-            <h1>Haojun 'Ricky' Zhuang</h1>
-            <p>CS @ UC Berkeley<p>
-            <hr class="darkblue">
-            <div class="social-links">
+            <img src="avatar3.jpeg" alt="photo" class="profile-photo" style="border-radius: 50%; width: 160px; margin-bottom: 1.2rem;">
+            <h1 style="margin-bottom: 0.3em;">Haojun "Ricky" Zhuang</h1>
+            <p style="font-style: italic; margin-top: 0; margin-bottom: 0.8em;">庄皓骏</p>
+            <hr class="darkblue" style="height:3px">
+            <div class="social-links" style="display: flex; justify-content: center; gap: 22px; margin-bottom: 1.2em;">
                 <a href="https://www.linkedin.com/in/haojunzhuang/" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -26,89 +26,45 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            <hr class="darkblue">
-            <p>rickyzhuang[at]berkeley[dot]edu</p>
+            <hr class="darkblue" style="height:3px">
+            <p style="font-size: 1.03em; word-break: break-all; margin-top: 1em;">
+                <span id="email" style="cursor:pointer;" title="Hover to Reveal">rickyzhuang[at]berkeley[dot]edu</span>
+            </p>
+            <hr class="darkblue" style="height:3px">
         </div>
         <div class="right-panel">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hi there! I am a undergrad majoring in Computer Science at <a href="https://www.berkeley.edu/">UC Berkeley</a>.
+            <section id="about" style="padding: 0 1.2em;">
+                <h2 style="margin-top: 0;">About Me</h2>
+                <p>
+                    Hi there! I'm an EECS Master's student at UC Berkeley.
+                    I am passionate about using AI and engineering (software, hardware, ML..) to solve problems in translational healthcare and neuroscience.
+                    <br><br>
+                    My research focuses on <b> personalized multimodal health AI, brain-computer interfaces (BCI), and robotics. </b> 
+                    <br><br>
+                    Some of my non-academic interests are basketball, climbing, video games, spending time with my cats, reading, cooking, and traveling.
                 </p>
-                <p>I am interested in engineering (software, hardware, electrical...), machine learning, neuroscience, and healthcare.
-                    I have been fortunate to contribute to research at
-                    <a href="https://neuralengatberkeley.github.io/">SNEL</a>,
-                    <a href="https://www.media.mit.edu/groups/fluid-interfaces/overview/">Fluid Interfaces</a>,
-                    <a href="https://chenlab.io/">C.H.E.N. Lab</a>,
-                    <a href="https://knightlab.neuro.berkeley.edu/">Knight Lab</a>,
-                    and <a href="https://mindscape.team/">MINDSCAPE@UCSF</a>.
-                    Previously, I worked as software engineers at <a
-                    href="https://www.globesisters.com/">Globesisters</a>
-                    and <a href="https://www.applied-motion.com/s/">Applied Motion Products.</a>
-                </p>
-                <p>When I'm not coding or enhancing my 
-                    <a href="https://www.reddit.com/r/berkeley/comments/k6e0zd/what_is_mathematical_maturity/">mathematical maturity</a>,
-                   , you'll find me hanging out with my friends and my cat Yuzu, 
-                   playing basketball, or diving into video games. 
-                   I also love cooking and rockclimbing.</p>
-                <p>Current Game(s) I'm grinding: RoTK13.</p>
             </section>
-
-            <section id="research"> 
-                <h2>Interest</h2>
-                <p>My overarching research goal is to develop AI-powered computational and engineering tools 
-                   to model complex multimodal human data 
-                   — spanning clinical, biological, and neurological domains.</p>
-                <p>I aspire to leverage these AI tools to build systems that 
-                    ultimately improve healthcare outcomes and enhance human well-being.</p>
-                <h2>Publications</h2>
-                <p>Under Construction 🚧</p>
-                <a href="publications.html">publications</a>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>Some of my other(probably outdated) projects here.</p>
-                <ul>
-                    <li><a href="https://github.com/haojunzhuang/SixGPTeen" target="_blank">SixGPTeen</a> - 16b design contest project. Won second place in "Real-World Impact"</li>
-                    <!-- <li><a href="https://drive.google.com/file/d/12I_3XI1jwcKqmrii_eX2ngYXzDJK-hL8/view?usp=sharing" target="_blank">Visual Search</a> - A cognitive neuroscience analysis on iEEG data</li> -->
-                    <li><a href="https://github.com/haojunzhuang/HAI_simulation" target="_blank">Network ABM Simulation</a> - A simulation for tracking and analyzing HAI transmissions @ UCSF</li>
-                    <li><a href="https://inst.eecs.berkeley.edu/~cs180/fa23/upload/files/proj5/rickyzhuang2003/" target="_blank">NeRF</a> - A simple replication of NeRF</li>
-                    <li><a href="https://inst.eecs.berkeley.edu/~cs180/fa23/upload/files/proj6/rickyzhuang2003/" target="_blank">CS180 Final Project</a> - AR & Neural Style Transfer</li>
-                    <li>Adversarial Machine Learning - Provably robust image recognition neural network powered by lagrangian and duality</li>
-                    <li><a href="https://github.com/haojunzhuang/Modile" target="_blank">Modile</a> - A mobile app that allows control of AMP's electric motors, based on Modbus</li>
-                    <!-- <li><a href="https://haojun.me/#/blog" target="_blank">Writer's Blog</a> - R4B essay 3</li> -->
-                    <!-- <li><a href="https://haojun.me/#/simulations/love" target="_blank">R4B Final Project: Love Simulation</a> - Evolutionary psychology study with agent-based simulation</li> -->
-                    <!-- <li>Gitlet - A miniature git written in java</li>
-                    <li>REGULUS - An end-to-end encrypted file sharing system</li>
-                    <li>CS61CPU - a digital CPU that runs RISC-V instructions</li>
-                    <li>Flatland - A tale of Flatfish Xu Tao</li>
-                    <li>Lapidary - Yu Long's Minecraft Mod</li> -->
-                    <li>My PC - Unfortunately a gaming desktop rather than a deep learning working station.</li>
-                </ul>        
-            </section>
-            <section id="teaching">
-                <h2>Teaching</h2>
-                <ul>
-                    <li><a href="https://eecs16a.org/" target="_blank">EECS 16A</a> - Lab and Office Hour TA- Fa23, Sp24</li>
-                </ul>        
-            </section>
-            <section id="funfacts">
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li>I stayed at three different colleges at Berkeley: 
-                        <a href="https://chemistry.berkeley.edu/home">CoC</a>,
-                        <a href="https://ls.berkeley.edu">L&S</a>,
-                        and finally 
-                        <a href="https://cdss.berkeley.edu/">CDSS</a>.
-                    </li>
-                    <li>I played for Berkeley's Overwatch Esports Team.</li>
-                </ul>        
-            </section>
-            
+            <div style="height: 32px;"></div>
+            <section id="about" style="padding: 0 1.2em;">
+                <h2 style="margin-top: 0;">Publications</h2>
+                <div style="margin-bottom: 1.1em;">
+                    <strong>Haojun Zhuang</strong>, Dünya Baradari, Nataliya Kosmyna, Arnav Balyan, Constanze Albrecht, Stephanie Chen, Pattie Maes. 
+                    "Detecting Reading-Induced Confusion using EEG and Eye Tracking." <em>arXiv preprint arXiv:2508.14442 (2025)</em>. <a href="https://arxiv.org/abs/2508.14442" target="_blank">https://arxiv.org/abs/2508.14442</a>.
+                </div>
+                <div style="margin-bottom: 1.1em;">
+                    Mattia Pagnotta, <strong>Haojun Zhuang</strong>, K. Slama, K. D. Laxer, T. Endestad, A.K. Solbakk, J. J. Lin, R. T. Knight.<br>
+                    “Visual search: a false dichotomy.” <em>Society for Neuroscience Annual Meeting (SfN 2025), San Diego, CA.</em>
+                </div>
+                <div style="margin-bottom: 1.1em;">
+                    <strong>Haojun Zhuang</strong>, Arthurine Zakama, Katherine Heller, Shakeela Faulkner, Bruce Gollub, Nichole Young-Lin, Irene Y. Chen, Mercy Asiedu. 
+                    "Large scale analysis and prediction of adverse maternal health events across heterogeneous populations from the All of Us dataset."
+                    <em>Under Review</em>.
+                </div>
         </div>
     </div>
     <!-- <footer>
         <p>© 2024 by Haojun Zhuang. All rights reserved.</p>
     </footer> -->
+    <script src="script.js"></script>
 </body>
 </html>
