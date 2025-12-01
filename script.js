@@ -16,8 +16,6 @@ function setShuffledEmailWithPrompt() {
     emailElem.title = "Click to reveal";
 }
 
-setShuffledEmailWithPrompt();
-
 function revealEmailWithEffect(elem, email) {
     let revealLength = 0;
     const revealDelay = 40;
@@ -81,7 +79,8 @@ function addRevealOnClick(id) {
     // });
 }
 
-addRevealOnClick('email');
+// setShuffledEmailWithPrompt();
+// addRevealOnClick('email');
 
 const comics = [
     [167, 'nihilism.png'],
